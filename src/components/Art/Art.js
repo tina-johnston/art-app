@@ -3,6 +3,8 @@ import { cartActions } from '../../store/cart-slice';
 import styles from './Art.module.css';
 import Card from '../UI/Card';
 
+//individual item, button adds to count and cart item
+
 const Art = (props) => {
   const dispatch = useDispatch();
   const { id, title, image, description, price } = props;

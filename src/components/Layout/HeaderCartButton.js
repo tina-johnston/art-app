@@ -6,10 +6,12 @@ import HeartIcon from '../../assets/HeartIcon';
 const HeaderCartButton = (props) => {
   const dispatch = useDispatch();
 
+  
   const toggleCartHandler = () => {
     dispatch(uiActions.toggle());
   };
 
+  //total updated 
   const totalInCart = useSelector((state) => state.cart.totalAmount);
   return (
     <button className={styles.button} onClick={toggleCartHandler}>
@@ -20,7 +22,6 @@ const HeaderCartButton = (props) => {
       <span className={styles.icon}>
         <CartIcon />
       </span>
-
       <div className={styles.count}>{totalInCart}</div>
     </button>
   );

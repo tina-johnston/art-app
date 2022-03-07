@@ -68,6 +68,7 @@ const data = [
   },
 ];
 
+//takes art component, passes props, renders info from data list
 const ArtList = () => {
   return (
     <section className={styles.art}>

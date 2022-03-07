@@ -12,6 +12,7 @@ const Cart = (props) => {
   const toggleCartHandler = () => {
     dispatch(uiActions.toggle());
   };
+  // this is the array of items to be displayed
   const cartProducts = useSelector((state) => state.cart.products);
 
   const subTotal = useSelector((state) => state.cart.subTotal);
