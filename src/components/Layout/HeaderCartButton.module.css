@@ -1,0 +1,32 @@
+.button {
+  cursor: pointer;
+  border: none;
+  background-color: gray;
+  color: white;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.button:hover,
+.button:active {
+  background-color: tomato;
+}
+
+.icon {
+  width: 1.35rem;
+  height: 1.35rem;
+  margin-right: 0.5rem;
+  margin-left: 0.8rem;
+}
+
+.count {
+  background-color: peru;
+  padding-top: 10px;
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  margin-left: 1rem;
+}
