@@ -7,9 +7,11 @@ const CartProduct = (props) => {
   const { id, title, price, image, totalQuantity } = props;
 
   const removeHandler = () => {
+    //id is payload
     dispatch(cartActions.removeFromCart(id));
   };
   const addHandler = () => {
+    //item is payload
     dispatch(
       cartActions.addToCart({
         id,
